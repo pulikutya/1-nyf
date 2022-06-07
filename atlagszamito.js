@@ -1,4 +1,4 @@
-function listRemoveSpecific(list, item, all)
+function listRemoveSpecific(list, item, all = false)
 {
 	for(let i = 0; i < list.length; i++)
 	{
@@ -13,13 +13,19 @@ function listRemoveSpecific(list, item, all)
 	}
 }
 for(let i = 1; i < 6; i++) {document.querySelector(`#a${i}`).onclick = add(i); }
-sum ;
-function add(n) {
-	crn = document.createElement("div");
-	suly = document.querySelector("#jegysuly");
-	crn.innerText+=`${n}; ${suly}`;
-	crn_removebutton = document.createElement("button");
-	crn.crn_removebutton.onclick=function() {crn.remove(); }
-	crn.addappendChild(crn_removebutton);
+function removeFromSum(jegy, suly)
+{
 
+}
+sum = [];
+function add(n) {
+	crn = document.createElement("li");
+	suly = document.querySelector("#jegysuly");
+	crn.innerText+=`${n}; ${suly} `;
+	crn_removebutton = document.createElement("button");
+	crn_removebutton.onclick=function() {crn.remove(); removeFromSum(jegy, suly) }
+	crn.appendChild(crn_removebutton);
+
+
+	document.querySelector("#jegyek").appendChild(crn);
 }
