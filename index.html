@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="atlagszamito.js" defer></script>
+	<!--
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+		body
+		{
+			font-family: url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+		}
+	</style>
+	-->
+	<title>Document</title>
+</head>
+<body>
+	<nav>
+		<div id="#kulsooldalak">
+			<a href="http://www.szlgbp.hu/" target="_blank">Suli weboldalja</a>
+			<a href="https://szlgbp.info/" target="_blank">Házioldal</a>
+		</div>
+		<div id="enoldalaim">
+			<a href="https://pulikutya.github.io/M-k-d--Aknakeres--HTML-CSS-JS/">Aknakereső</a>
+		</div>
+		<div class="belsodolgok">
+			<a href="#orarend">órarendem</a>
+		</div>
+	</nav>
+
+	<header>
+		<h1>Marci weboldalja</h1>
+	</header>
+	
+	<main>
+		<hr>
+		<article>
+			<h1>Az órarendem nyfben</h1>
+			<h2>(Mintha bárkit is érdekelne)</h2>
+			<table id="orarend">
+				<thead>
+					<tr>
+						<th>Hanyadik óra</th>
+						<th>Idő</th>
+						<th>Hétfő</th>
+						<th>Kedd</th>
+						<th>Szerda</th>
+						<th>Csütörtök</th>
+						<th>Péntek</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>0.</th>
+						<th class="Time">7:30</th>
+						<td rowspan="2">Tesi</td>
+						<td>-</td>
+						<td>-</td>
+						<td rowspan="2">Orosz</td>
+						<td rowspan="2">Infó</td>
+					</tr>
+					<tr>
+						<th>1.</th>
+						<th class="Time">8:25</th>
+						<td>Infó</td>
+						<td>Nyelvtan</td>
+					</tr>
+					<tr>
+						<th>2.</th>
+						<th class="Time">9:20</th>
+						<td>Tan. módsz.</td>
+						<td rowspan="2">Angol</td>
+						<td>Matek</td>
+						<td>Tesi</td>
+						<td rowspan="2">Angol</td>
+					</tr>
+					<tr>
+						<th>3.</th>
+						<th class="Time">10:20</th>
+						<td rowspan="2">Orosz</td>
+						<td rowspan="3">Angol</td>
+						<td>Matek</td>
+					</tr>
+					<tr>
+						<th>4.</th>
+						<th class="Time">11:15</th>
+						<td>Irodalom</td>
+						<td>Infó</td>
+						<td rowspan="2">Orosz</td>
+					</tr>
+					<tr>
+						<th>5.</th>
+						<th class="Time">12:20</th>
+						<td rowspan="2">Angol</td>
+						<td>Matek</td>
+						<td rowspan="2">Angol</td>
+					</tr>
+					<tr>
+						<th>6.</th>
+						<th class="Time">13:25</th>
+						<td>-</td>
+						<td>Infó</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<th>7.</th>
+						<th class="Time">14:20</th>
+						<td>-</td>
+						<td>-</td>
+						<td>Ofő</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+		</article>
+		<article>
+			<h1>Átlag számító</h1>
+			<h2>Avagy hány kettes kell hogy ne bukj meg</h2>
+			<div id="atlagszamito">
+				<ul id="jegyek">
+					
+				</ul>
+				<div id="jegyhozzaado">
+					+
+					<button id="a1">1</button>
+					<button id="a2">2</button>
+					<button id="a3">3</button>
+					<button id="a4">4</button>
+					<button id="a5">5</button>
+					<input type="number" id="jegysuly">
+				</div>
+				<div id="eredmeny"></div>
+				<button id="kiszamolgomb">számolja ki</button>
+			</div>
+		</article>
+	</main>
+	<footer>
+		
+	</footer>
+</body>
+</html>
