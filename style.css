@@ -8,6 +8,38 @@ body
 	background-image: linear-gradient(#181818, #303030);
 }
 
+::-webkit-scrollbar
+{
+	width:10px;
+}
+
+::-webkit-scrollbar-button
+{
+	width:10px;
+	height:5px;
+}
+
+::-webkit-scrollbar-corner
+{
+	color:red;
+}
+
+::-webkit-scrollbar-thumb
+{
+	color:green;
+}
+
+::-webkit-scrollbar-track
+{
+	color:blue;
+}
+
+::-webkit-scrollbar-track-piece
+{
+	color:magenta;
+}
+
+
 button
 {
 	color:#dddddd;
@@ -92,7 +124,7 @@ main article table
 	border:solid 1px #cccccc;
 	border-radius: 3px;
 	margin-left: calc((var(--pagewidth) - var(--articlewidth)) / 2);
-	margin-right: calc((var(--page) - var(--articlewidth)) / 2);
+	margin-right: calc((var(--pagewidth) - var(--articlewidth)) / 2);
 	width: var(--articlewidth);
 	border-spacing: 2px;
 }
@@ -132,11 +164,7 @@ hr
 	margin-bottom: 3.8%;
 }
 
-#atlagszamito ul
-{
-	height: 200px;
-	overflow-y: scroll;
-}
+
 
 #atlagszamito ul li
 {
