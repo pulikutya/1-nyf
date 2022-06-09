@@ -1,17 +1,62 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*/
 body
 {
 	--pagewidth:100%;
 	font-family: "Cascadia Code", "Source Code Pro", "Courier New", Courier, monospace;
 	color: lightgray;
 	/*background-color: #232323;*/
-	/*background-image: linear-gradient(to right, red , yellow);*/
 	background-image: linear-gradient(#181818, #303030);
+	/*font-family: 'Press Start 2P', cursive;*/
 }
 
 .hidden
 {
 	display:none;
 }
+
+*::-moz-selection { /* Code for Firefox */
+	color: #dfdfdf;
+	background: darkslategray;
+	font-family: 'Press Start 2P', cursive;
+  }
+  
+*::selection {
+	color: #dfdfdf;
+	background: darkslategray;
+	font-family: 'Press Start 2P', cursive;
+  }
+
+::-webkit-scrollbar
+{
+	
+}
+
+::-webkit-scrollbar-button
+{
+	
+}
+
+::-webkit-scrollbar-corner
+{
+	
+}
+
+::-webkit-scrollbar-thumb
+{
+	
+}
+
+::-webkit-scrollbar-track
+{
+	
+}
+
+::-webkit-scrollbar-track-piece
+{
+	
+}
+
 
 button
 {
@@ -53,6 +98,9 @@ nav
 
 	font-size: larger;
 	font-weight: bolder;
+
+
+	font-family: 'Press Start 2P', cursive;
 }
 
 a
@@ -84,6 +132,8 @@ main article
 	background-color: #151515;
 	border:#cccccc solid 1px;
 	border-radius: 3px;
+
+	box-shadow: 6px 6px 6px 6px #131313;
 }
 
 .Time
@@ -97,7 +147,7 @@ main article table
 	border:solid 1px #cccccc;
 	border-radius: 3px;
 	margin-left: calc((var(--pagewidth) - var(--articlewidth)) / 2);
-	margin-right: calc((var(--page) - var(--articlewidth)) / 2);
+	margin-right: calc((var(--pagewidth) - var(--articlewidth)) / 2);
 	width: var(--articlewidth);
 	border-spacing: 2px;
 }
@@ -137,13 +187,20 @@ hr
 	margin-bottom: 3.8%;
 }
 
+
+
 #atlagszamito ul
 {
-	height: 200px;
+	height:200px;
 	overflow-y: scroll;
+	display:inline-block;
+	width: 150px;
 }
 
-#atlagszamito ul li
+
+#galeria
 {
-	
+	display:grid;
+	justify-content: center;
+	gap:3px;
 }
