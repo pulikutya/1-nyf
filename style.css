@@ -1,42 +1,55 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*/
 body
 {
 	--pagewidth:100%;
 	font-family: "Cascadia Code", "Source Code Pro", "Courier New", Courier, monospace;
 	color: lightgray;
 	/*background-color: #232323;*/
-	/*background-image: linear-gradient(to right, red , yellow);*/
 	background-image: linear-gradient(#181818, #303030);
+	/*font-family: 'Press Start 2P', cursive;*/
 }
+
+*::-moz-selection { /* Code for Firefox */
+	color: #dfdfdf;
+	background: darkslategray;
+	font-family: 'Press Start 2P', cursive;
+  }
+  
+*::selection {
+	color: #dfdfdf;
+	background: darkslategray;
+	font-family: 'Press Start 2P', cursive;
+  }
 
 ::-webkit-scrollbar
 {
-	width:10px;
+	
 }
 
 ::-webkit-scrollbar-button
 {
-	width:10px;
-	height:5px;
+	
 }
 
 ::-webkit-scrollbar-corner
 {
-	color:red;
+	
 }
 
 ::-webkit-scrollbar-thumb
 {
-	color:green;
+	
 }
 
 ::-webkit-scrollbar-track
 {
-	color:blue;
+	
 }
 
 ::-webkit-scrollbar-track-piece
 {
-	color:magenta;
+	
 }
 
 
@@ -80,6 +93,9 @@ nav
 
 	font-size: larger;
 	font-weight: bolder;
+
+
+	font-family: 'Press Start 2P', cursive;
 }
 
 a
@@ -111,6 +127,8 @@ main article
 	background-color: #151515;
 	border:#cccccc solid 1px;
 	border-radius: 3px;
+
+	box-shadow: 6px 6px 6px 6px #131313;
 }
 
 .Time
@@ -166,7 +184,18 @@ hr
 
 
 
-#atlagszamito ul li
+#atlagszamito ul
 {
-	
+	height:200px;
+	overflow-y: scroll;
+	display:inline-block;
+	width: 150px;
+}
+
+
+#galeria
+{
+	display:grid;
+	justify-content: center;
+	gap:3px;
 }
