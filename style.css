@@ -10,6 +10,7 @@ body
 	/*font-family: 'Press Start 2P', cursive;*/
 }
 
+
 .hidden
 {
 	display:none;
@@ -50,6 +51,7 @@ button:active
 h1
 {
 	font-family: 'Press Start 2P', cursive;
+	font-size: xx-large;
 }
 
 nav
@@ -176,6 +178,8 @@ hr
 	overflow-y: scroll;
 	display:inline-block;
 	width: 150px;
+	border:solid 2px green;
+	border-radius: 3px;
 }
 
 
@@ -283,4 +287,15 @@ noscript
 	margin-right: calc((var(--pagewidth) - var(--articlewidth)) / 2);
 	width: var(--articlewidth);
 	max-width: var(--articlewidth);
+}
+
+
+#eredmeny
+{
+	border:solid #cccccc 1px;
+	padding: 2px 2px 2px 2px;
+	border-radius: 1.5px;
+	text-decoration: underline;
+	font-size: x-large;
+	display:inline-block;
 }

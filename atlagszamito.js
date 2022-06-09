@@ -54,7 +54,7 @@ function calcAv()
 		div+=sum[i][1]/100;
 
 	}
-	document.querySelector("#eredmeny").innerText = tsum / div;
+	document.querySelector("#eredmeny").innerText = `=${tsum / div}`;
 }
 var i = 0;
 function add(n) {
