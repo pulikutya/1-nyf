@@ -2,7 +2,6 @@ function CheckIfArray(obj)
 {
     return obj.constructor.name == "Array";
 }
-
 function ArraysEqual(a, b)
 {
     if(CheckIfArray(a) && CheckIfArray(b))
@@ -19,7 +18,6 @@ function ArraysEqual(a, b)
     }
     else return a === b;
 }
-
 function listRemoveSpecific(list, item, all = false)
 {
 	for(let i = 0; i < list.length; i++)
@@ -34,10 +32,16 @@ function listRemoveSpecific(list, item, all = false)
 }
 for(let i = 1; i < 6; i++) {document.querySelector(`#a${i}`).onclick = function() {add(i)}; }
 function removeFromSum(jegy, suly){listRemoveSpecific(sum, [jegy, suly], false); calcAv();}
+const jegyek = document.querySelector("#jegyek");
 document.querySelector("#removeallgomb").onclick = function ()
 {
-	document.querySelector("#jegyek").children = [];
+	let temp = jegyek.children.length;
+	for(let i = 0; i < temp; i++)
+	{
+		jegyek.children[0].remove();
+	}
 	sum = [];
+	calcAv();
 }
 var sum = [];
 function calcAv()
@@ -71,3 +75,4 @@ function add(n) {
 	sum.push([n, suly])
 	calcAv();
 }
+calcAv();

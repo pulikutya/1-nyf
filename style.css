@@ -77,7 +77,12 @@ nav
 
 	font-family: 'Press Start 2P', cursive;
 
-	padding: 8px;
+	padding: 3px;
+}
+
+nav div
+{
+	margin: 10px;
 }
 
 a
@@ -126,6 +131,7 @@ main article table
 	margin-left: calc((var(--pagewidth) - var(--articlewidth)) / 2);
 	margin-right: calc((var(--pagewidth) - var(--articlewidth)) / 2);
 	width: var(--articlewidth);
+	max-width: var(--articlewidth);
 }
 
 main article table tr td
@@ -200,6 +206,7 @@ hr
 .kekbusz, .pirosbusz, .feketebusz
 {
 	width : 60px;
+	min-width: 60px;
 	line-height : 30px;
 	text-align: center;
 	
@@ -225,10 +232,6 @@ hr
 	border: 1px solid #cccccc;
 }
 
-main article p div
-{
-	display:inline;
-}
 
 main article p
 {
@@ -249,4 +252,23 @@ main article p
 	float :left;
 	margin:5px 5px 5px 5px;
 	border: 1px #606060 solid;
+}
+
+.szponzor
+{
+	color:#ffb5ff;
+}
+
+.kekszi
+{
+	text-shadow: 0px 0px 2px #cccccc;
+}
+
+
+
+
+.inline_block
+{
+	/*display:inline;*/
+	display:inline-block;
 }
