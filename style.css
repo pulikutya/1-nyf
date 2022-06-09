@@ -102,7 +102,7 @@ nav a
 	display:inline-block;
 }
 
-main article
+article
 {
 	--articlewidth: 80%;
 	margin-left: calc((var(--pagewidth) - var(--articlewidth)) / 2);
