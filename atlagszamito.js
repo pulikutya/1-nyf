@@ -1,7 +1,4 @@
-function CheckIfArray(obj)
-{
-    return obj.constructor.name == "Array";
-}
+function CheckIfArray(obj){return obj.constructor.name == "Array";}
 function ArraysEqual(a, b)
 {
     if(CheckIfArray(a) && CheckIfArray(b))
@@ -25,8 +22,8 @@ function listRemoveSpecific(list, item, all = false)
 		if(ArraysEqual(list[i], item))
 		{
 			list.splice(i, 1)
-			if(!all) {
-				break; }
+			if(!all) 
+				break; 
 		}
 	}
 }
@@ -52,7 +49,6 @@ function calcAv()
 	{
 		tsum+=sum[i][0]*sum[i][1]/100;
 		div+=sum[i][1]/100;
-
 	}
 	document.querySelector("#eredmeny").innerText = `=${tsum / div}`;
 }
