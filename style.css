@@ -272,3 +272,10 @@ main article p
 	/*display:inline;*/
 	display:inline-block;
 }
+
+noscript
+{
+	border:solid 1px #cccccc;
+	padding: 5px;
+	display:inline-block;
+}
