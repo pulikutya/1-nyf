@@ -278,4 +278,9 @@ noscript
 	border:solid 1px #cccccc;
 	padding: 5px;
 	display:inline-block;
+	margin:5px;
+	margin-left: calc((var(--pagewidth) - var(--articlewidth)) / 2);
+	margin-right: calc((var(--pagewidth) - var(--articlewidth)) / 2);
+	width: var(--articlewidth);
+	max-width: var(--articlewidth);
 }
