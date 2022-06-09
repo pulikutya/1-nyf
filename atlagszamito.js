@@ -34,6 +34,11 @@ function listRemoveSpecific(list, item, all = false)
 }
 for(let i = 1; i < 6; i++) {document.querySelector(`#a${i}`).onclick = function() {add(i)}; }
 function removeFromSum(jegy, suly){listRemoveSpecific(sum, [jegy, suly], false); calcAv();}
+document.querySelector("#removeallgomb").onclick = function ()
+{
+	document.querySelector("#jegyek").children = [];
+	sum = [];
+}
 var sum = [];
 function calcAv()
 {
@@ -61,11 +66,8 @@ function add(n) {
 		document.querySelector(`#b${j}`).remove()
 		removeFromSum(n, suly) 
 	}
-
 	crn.appendChild(crn_removebutton);
-
 	document.querySelector("#jegyek").appendChild(crn);
-
 	sum.push([n, suly])
 	calcAv();
 }

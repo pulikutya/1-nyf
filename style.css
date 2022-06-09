@@ -19,44 +19,13 @@ body
 	color: #dfdfdf;
 	background: darkslategray;
 	font-family: 'Press Start 2P', cursive;
-  }
+}
   
 *::selection {
 	color: #dfdfdf;
 	background: darkslategray;
 	font-family: 'Press Start 2P', cursive;
-  }
-
-::-webkit-scrollbar
-{
-	
 }
-
-::-webkit-scrollbar-button
-{
-	
-}
-
-::-webkit-scrollbar-corner
-{
-	
-}
-
-::-webkit-scrollbar-thumb
-{
-	
-}
-
-::-webkit-scrollbar-track
-{
-	
-}
-
-::-webkit-scrollbar-track-piece
-{
-	
-}
-
 
 button
 {
@@ -78,6 +47,11 @@ button:active
 	transition: 150ms;
 }
 
+h1
+{
+	font-family: 'Press Start 2P', cursive;
+}
+
 nav
 {
 	--navwidth: 95%;
@@ -87,6 +61,7 @@ nav
 
 	display:block;
 	border: gray solid 1px;
+	border-radius: 5px;
 	margin-bottom: 20px;
 	position:sticky;
 	width: var(--navwidth);
@@ -101,6 +76,8 @@ nav
 
 
 	font-family: 'Press Start 2P', cursive;
+
+	padding: 8px;
 }
 
 a
@@ -149,7 +126,6 @@ main article table
 	margin-left: calc((var(--pagewidth) - var(--articlewidth)) / 2);
 	margin-right: calc((var(--pagewidth) - var(--articlewidth)) / 2);
 	width: var(--articlewidth);
-	border-spacing: 2px;
 }
 
 main article table tr td
@@ -157,7 +133,6 @@ main article table tr td
 	border:solid 1px #cccccc;
 	width:min-content;
 	height: min-content;
-	padding: 2px;
 }
 
 
@@ -202,5 +177,76 @@ hr
 {
 	display:grid;
 	justify-content: center;
-	gap:3px;
+	justify-items: center;
+	gap:10px;
+
+	grid-template-columns: repeat(10, 60px);
+	/*grid-template-rows: repeat(7, 30px);*/
+}
+
+/*#galeria div
+{
+	width : 60px;
+	line-height : 30px;
+	text-align: center;
+	
+	border-radius: 5px;
+	color:#dddddd;
+
+	font-weight: 700;
+	border: 1px solid #cccccc;
+}*/
+
+.kekbusz, .pirosbusz, .feketebusz
+{
+	width : 60px;
+	line-height : 30px;
+	text-align: center;
+	
+	border-radius: 5px;
+	color:#dddddd;
+
+	font-weight: 700;
+}
+
+.kekbusz
+{
+	background-color: #009FE3;
+}
+
+.pirosbusz
+{
+	background-color: #e41f18;
+}
+
+.feketebusz
+{
+	background-color: black;
+	border: 1px solid #cccccc;
+}
+
+main article p div
+{
+	display:inline;
+}
+
+main article p
+{
+	letter-spacing: 1.5px;
+}
+
+#sziauramkep
+{
+	font-size: larger;
+	border: 1px solid #cccccc;
+	padding: 7px;
+	border-radius: 5px;
+}
+
+#sziauramkep img
+{
+	width:100px;
+	float :left;
+	margin:5px 5px 5px 5px;
+	border: 1px #606060 solid;
 }
