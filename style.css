@@ -101,13 +101,18 @@ nav a
 	display:inline-block;
 }
 
-article
+main
 {
 	--articlewidth: 80%;
 	margin-left: calc((var(--pagewidth) - var(--articlewidth)) / 2);
 	margin-right: calc((var(--pagewidth) - var(--articlewidth)) / 2);
-	margin-bottom: 30px;
+	
 	width: var(--articlewidth);
+}
+
+article
+{
+	margin-bottom: 30px;
 	padding: 10px;
 
 	background-color: #151515;
